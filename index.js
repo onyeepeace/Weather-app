@@ -10,14 +10,14 @@ imgy.style.width = '50%';
 
 let see = async () => {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=imperial&appid=8d56aec28d481e32e90ec65fb0a35df0`);
+        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=8d56aec28d481e32e90ec65fb0a35df0`);
 
         const data = await response.json();
     
         console.log(data);
 
         lagoso.innerHTML = data.weather[0].main.toUpperCase();
-        lagos.innerHTML = `${Math.round(data.main.temp)}<img src="images/celsius.png" alt="celsius" style="width:10%;">`;
+        lagos.innerHTML = `${Math.round(data.main.temp)}<img src="images/celsius.png" alt="celsius" style="width:3rem;">`;
         lekki.innerHTML = `${data.name} ${data.sys.country}`;
         let now  = new Date();
         lekki2.innerHTML = dateBuilder(now);
