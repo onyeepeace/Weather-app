@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+    max-height: 100vh;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -62,8 +63,8 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    font-weight: bolder;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .lagoso img {
@@ -76,18 +77,20 @@ button {
 }
 
 .lekki {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
 #flat-icon {
     display: inline-block;
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: monospace;
     text-transform: uppercase;
     background-color: #ffda61;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin-bottom: 1rem;
 }
 
@@ -98,11 +101,24 @@ a {
 
 a:hover {
     opacity: 0.5;
+    color: #5777a3;
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:375px) {
     header {
+        font-size: 1.5rem;
+    }
+
+    .lagoso {
         font-size: 1rem;
+    }
+
+    .lekki {
+        font-size: 1.5rem;
+    }
+
+    #flat-icon {
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -113,5 +129,9 @@ a:hover {
 
     input, button {
         padding: 15px 20px;
+    }
+
+    #flat-icon {
+        font-size: 12px;
     }
 }
