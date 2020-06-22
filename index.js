@@ -10,7 +10,7 @@ imgy.style.width = '50%';
 
 let see = async () => {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=8d56aec28d481e32e90ec65fb0a35df0`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=8d56aec28d481e32e90ec65fb0a35df0`);
 
         const data = await response.json();
     
