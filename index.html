@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IN | OUT</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.11/css/all.css">
     <link rel="shortcut icon" href="/images/haw-weather(1).png" sizes="192x192" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <img src="/images/sunny.jpg" alt="weather icon">
@@ -17,17 +19,17 @@
     </header>
 
     <main>
-        <form action=""submit>
-            <input id="city" type="text" placeholder="check a city...">
-            <button id="click" title="search" type="submit"><i class="fas fa-search"></i></button>
+        <form action="" submit>
+            <input id="searchInput" type="text" placeholder="check a city...">
+            <button id="search" title="search" type="submit"><i class="fas fa-search"></i></button>
         </form>
-        
+
         <!-- Data dynamically provided by JavaScript -->
         <div class="query">
-            <div class="lekki"></div>
-            <div class="lagoso"></div>
-            <div class="lagos"></div>
-            <div class="lekki2"></div>
+            <div class="city"></div>
+            <div class="weather-condition"></div>
+            <div class="weather-temperature"></div>
+            <div class="day"></div>
 
             <p id="flat-icon">Icons from <a href="https://www.flaticon.com/" title="Flaticon">flaticon.com</a></p>
         </div>
@@ -35,4 +37,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>

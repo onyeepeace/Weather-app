@@ -58,7 +58,7 @@ button {
     cursor: pointer;
 }
 
-.lagoso {
+.weather-condition {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,16 +67,16 @@ button {
     font-weight: bold;
 }
 
-.lagoso img {
+.weather-condition img {
     display: block;
     padding: 1rem 0;
 }
 
-.lagos {
+.weather-temperature {
     font-size: 3rem;
 }
 
-.lekki {
+.city {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bolder;
@@ -109,11 +109,11 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    .lagoso {
+    .weather-condition {
         font-size: 1rem;
     }
 
-    .lekki {
+    .city {
         font-size: 1.5rem;
     }
 
