@@ -23,7 +23,7 @@ const weatherInfo = async () => {
         let farenheit = Math.round((temperature * 1.8) + 32);
         // display temperature in both celsius and farenheit
         weatherTemperature.innerHTML = `${temperature}°C | ${farenheit}°F`;
-        city.innerHTML = data.name, data.sys.country;
+        city.innerHTML = `${data.name}, ${data.sys.country}`;
         let now = new Date();
         day.innerHTML = dateBuilder(now);
 
